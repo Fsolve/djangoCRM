@@ -20,6 +20,12 @@
 
 
 </div>
+<br/>
+<a  class="btn btn-secondary"  role = "button" href= "{% url 'home' %}">Back</a>
 
+<a  role = "button" class="btn btn-danger" href= "{% url 'delete_record' customer_record.id %}" >Delete</a>
+<a  role = "button" class="btn btn-primary" href= "{% url 'update_record' customer_record.id %}" >Update</a>
+
+<br/>
 
 {% endblock%}
